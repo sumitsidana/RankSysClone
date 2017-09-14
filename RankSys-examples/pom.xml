@@ -14,7 +14,7 @@ file, You can obtain one at http://mozilla.org/MPL/2.0/.
     <parent>
         <groupId>org.ranksys</groupId>
         <artifactId>RankSys</artifactId>
-        <version>0.5.0-SNAPSHOT</version>
+        <version>0.4.2-SNAPSHOT</version>
     </parent>
 
     <artifactId>RankSys-examples</artifactId>
@@ -100,5 +100,12 @@ file, You can obtain one at http://mozilla.org/MPL/2.0/.
             <artifactId>RankSys-formats</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+    <groupId>org.insightcentre</groupId>
+    <artifactId>RankSys-DivMF</artifactId>
+    <version>0.1</version>
+    <scope>system</scope>
+    <systemPath>/home/sumit/java_recsys_repository/RankSys-DivMF/target/RankSys-DivMF-0.1-jar-with-dependencies.jar</systemPath>
+</dependency>
     </dependencies>
 </project>
