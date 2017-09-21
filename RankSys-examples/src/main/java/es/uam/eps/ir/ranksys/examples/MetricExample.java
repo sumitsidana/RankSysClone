@@ -68,7 +68,7 @@ public class MetricExample {
         PreferenceData<Long, Long> testData = SimplePreferenceData.load(SimpleRatingPreferencesReader.get().read(testDataPath, lp, lp));
         PreferenceData<Long, Long> totalData = new ConcatPreferenceData<>(trainData, testData);
         // EVALUATED AT CUTOFF 10
-        int cutoff = 10;
+        int cutoff = 20;
         // ITEM - FEATURE file
         FeatureData<Long, String, Double> featureData = SimpleFeatureData.load(SimpleFeaturesReader.get().read(featurePath, lp, sp));
         // COSINE DISTANCE
