@@ -11,3 +11,7 @@ nb-configuration.xml
 *.iml
 .idea
 */*.iml
+*.classpath*
+*.project*
+*.settings*
+.gitignore
