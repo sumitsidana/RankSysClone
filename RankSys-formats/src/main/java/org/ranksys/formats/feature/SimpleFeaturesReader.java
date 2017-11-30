@@ -49,8 +49,8 @@ public class SimpleFeaturesReader implements FeaturesReader {
             String[] tokens = line.split("\t", 3);
             I item = ip.parse(tokens[0]);
             F feat = fp.parse(tokens[1]);
-
-            return Tuple.tuple(item, feat, 1.0);
+            double value = Double.parseDouble(tokens[2]);
+            return Tuple.tuple(item, feat, value);
         });
     }
 }
